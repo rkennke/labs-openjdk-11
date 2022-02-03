@@ -212,7 +212,7 @@ bool JVMCIGlobals::enable_jvmci_product_mode(JVMFlag::Flags origin) {
 
 
 bool JVMCIGlobals::gc_supports_jvmci() {
-  return UseSerialGC || UseParallelGC || UseG1GC;
+  return UseSerialGC || UseParallelGC || UseG1GC || UseShenandoahGC;
 }
 
 void JVMCIGlobals::check_jvmci_supported_gc() {
